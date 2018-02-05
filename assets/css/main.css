@@ -1,8 +1,110 @@
-h1{
-    color: #ff0000;
+* {
+    margin: 0;
+    padding: 0;
+}
+.content{
+    width: 90%;
+    margin: auto;
 }
 .banner{
     width: 100%;
-    height: 300px;
-    background:url("/assets/images/city-3083439_1920.jpg");
+    background:url("../images/city-3083439_1920.jpg");
+    background-position: center;
+}
+.main-menu{
+    width: 100%;
+    text-align: center;
+    background-color: brown;
+}
+.main-menu ul{
+
+}
+.main-menu ul li{
+    display: inline-block;
+    padding: 15px;
+}
+.competences{
+    text-align: center;
+}
+.title-wrapper{
+    margin: 25px 0;
+    text-align: center;
+}
+.title{
+    display: inline-block;
+}
+.before-title{
+    width: 35%;
+    display: inline-block;
+    float: left;
+    margin: 1em;
+}
+.after-title{
+    width: 35%;
+    display: inline-block;
+    float: right;
+    margin: 1em;
+}
+.bloc-gauche{
+    width: 35%;
+    text-align: center;
+    display: inline-block;
+    float: left;
+}
+.list-item-timeline{
+    list-style: none;
+}
+.item-timeline{
+    width: 50%;
+    margin: 15px auto;
+    padding: 15px 0;
+    background-color: red;
+    position: relative;
+    cursor: pointer;
+}
+.item-timeline.active:after{
+    content: '';
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    position: absolute;
+    top: 40%;
+    right: -7px;
+    transform: rotate(45deg);
+}
+.timeline-first{
+    border: 0;
+}
+.bloc-droite{
+    width: 65%;
+    display: inline-block;
+}
+.GaugeMeter{
+    margin: 25px;
+}
+.GaugeMeter span{
+    font-size: 35px !important;
+}
+.hidden{
+    display: none;
+}
+.img-logo-formation{
+    width: 350px;
+    height: 200px;
+    float: left;
+    margin: 20px;
+}
+.title-body-formations{
+    text-align: center;
+}
+.body-formations p{
+    text-align: justify;
+}
+.body-formations{
+    padding-right: 15px;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
