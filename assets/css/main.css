@@ -29,6 +29,11 @@
     color: #000;
     background-color: #fff;
 }
+.contact-cta{
+    float: right;
+    font-weight: bold;
+    height: 100%;
+}
 .competences{
     text-align: center;
 }
