@@ -1,13 +1,9 @@
 jQuery(document).ready(function($) {
     var bannerheight = $(window).height() - $('.main-menu').height();
     $('.banner').height(bannerheight);
-
-
     var gaugewidth = (( ($(window).width()-(($(window).width()*10)/100))) / 4)-60;
     $('.GaugeMeter').attr('data-size',gaugewidth);
-
-
-    var offset = $('.main-menu').offset().top
+    var offset = $('.main-menu').offset().top;
     $(window).scroll(function() {
         if ($(window).scrollTop() >= offset) {
             $('.main-menu').addClass('sticky');
@@ -15,9 +11,6 @@ jQuery(document).ready(function($) {
             $('.main-menu').removeClass('sticky');
         }
     });
-
-
-
 
     $('#item-timeline-1').on("click",function(){
         $('.item-timeline').removeClass('active');
